@@ -1,0 +1,115 @@
+/* General body styling */
+body {
+  font-family: "Mukta", sans-serif; /* Use the Mukta font-family */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    135deg,
+    #f4f4f4,
+    #dbe9f4
+  ); /* Soft gradient background */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* App container */
+.app {
+  text-align: center;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.app:hover {
+  transform: translateY(-10px); /* Slight hover effect */
+}
+
+/* Title styling */
+h1 {
+  color: #444;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling for recorder */
+.recorder button {
+  padding: 12px 25px;
+  font-size: 18px;
+  margin-top: 20px;
+  background: linear-gradient(
+    145deg,
+    #007bff,
+    #0056b3
+  ); /* Gradient button background */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recorder button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.recorder button:hover:not(:disabled) {
+  background-color: #0056b3;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Hover effect with shadow */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Output section */
+.output {
+  margin-top: 40px;
+}
+
+.output p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.output p:hover {
+  color: #007bff; /* Change text color on hover */
+}
+
+/* Button for output actions */
+.output button {
+  margin-top: 25px;
+  padding: 12px 25px;
+  background: linear-gradient(145deg, #28a745, #218838);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.output button:hover {
+  background-color: #218838;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px); /* Lift effect */
+}
+.processing-indicator {
+  font-size: 18px;
+  color: #007bff;
+  margin-top: 20px;
+}
+.error {
+  color: red;
+  font-weight: bold;
+}
